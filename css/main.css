@@ -1,0 +1,45 @@
+/*基础样式*/
+@charset "utf-8";
+font{font-size:12px}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,select,option,p,th,td,a{padding:0;margin:0;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+body{background:#ebeef0;width:100%;font:12px/1.5 'Microsoft YaHei',Arial, sans-serif;-webkit-text-size-adjust:none; -webkit-user-select: none;color:#8c8c8c;line-height:150%;}
+i,em,b,cite{font-style:normal; font-weight:normal}
+img{border:0;vertical-align: middle;}
+li,ol,ul{list-style-type:none;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+input,select,textarea{font-size:12px; vertical-align:middle;-webkit-appearance: none;}
+html{font-size: 12px;position:relative;height:auto;min-height:100%;}
+a{text-decoration: none;}
+.hide{display: none;}
+::-webkit-scrollbar { width: 0px;}
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;outline:0}
+.Color{color: #8c8c8c;}  /*透明度*/
+.left{float:left;}
+.right{float:right;}
+
+.icon{background: url("../img/icon.png") no-repeat;background-size:360px auto;display:inline-block;vertical-align: middle;}
+/*会主动消失的提示**/
+.tipBox{font-size:16px;text-align: center;border-radius:5px;position: absolute;left:50%;top:50%;margin:-20px 0 0 -150px;background:rgba(0,0,0,0.6);color:#fff;/*-webkit-animation:boxfade 4s ease;-ms-animation:boxfade 4s ease;-o-animation:boxfade 4s ease; */z-index:10001;opacity: 0}
+.tipBox{position: fixed;width:auto; padding:0 38px; line-height:40px;}
+.tipBox b{display:inline-block;width:22px;height:22px; background:url(../img/tip.png);background-size:25px 60px; position:absolute;left:11px;top:5px}
+.tipBox.loading{-webkit-animation:initial;}
+.tipBox.loading,.alertBox.ok,.alertBox.error{padding-right:16px;}
+.tipBox.loading b{top:6px; background-position:-3px -3px;-webkit-animation:loading 1.5s linear infinite;-ms-animation:loading 1.5s linear infinite;animation:loading 1.5s linear infinite; }
+.tipBox.ok b{ background-position:0 36px}
+.tipBox.error b{ background-position:0 77px;display:none;}
+.tipBox1{padding:10px 38px;}
+.tip-icon1{display:block;width:43px;height:43px;margin:10px auto 0;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFcAAABXCAMAAABGFileAAAAmVBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////VHQRUAAAAMnRSTlMAHA/wBvqV6iIRxAKK2V1IDPPVo1Xizr2vmN+5jW3Bd2dBx3Q7UE89tIYTei/lFTEu5C5esYkAAANjSURBVFjDzVnZdrJADA6yjJRNi1BRUSzudvt5/4f7zYDMsS4TcDinueCCjl9D8mWygVzsZWrtYu+fXph6FO+sdGnDszLYWK/Ftbxam0F7UGM0Not7Yo5HRitUzWWXSEN9ePmCuVpj1H5Yq6pPZ9lSs0tba8tsNtVrpcN+I9SDdUZ9OX478Fuc7+PLGdk6kFGdrFLIW2j3zbTwqs/JHKIJKl3eAsnB4K36JpIx/NI78y3IZTsvPerLuWXxk9EIaDKK+HlLwjl7Xh7r0SPHKm1hP+QsDy4WQBMJGA9B7YHHJnjivSnbtXf82aR/9+8cNjSaB3zIge/o0+NGmEEbmXG63/SKwdnoQjvZc8bf+lSLE6ENpvh5ciMc8P3YaY3rjBHAv6LCEJlgQHsxkBXD36TAeGAaPCMaw/hwrq0QwHMSIEh2Eb4MjS65CVjBNnLf6V+/XjBJlsV//Sm5K6JL9fomd+VD6RUostsNM4hwXYgGBwW4gCkhrB2J6m6V4G5R4TOtXAxBUIILb+IuMBhyTBEuco0ZtbE9UIQLmKXLJIaBvVCGu8BrhpMOvaYpw9XQc1gUbjjJ6LgUqq2rWFsoxF1U1zhmnw+FuB+YnAFsvCschbgOFnc2LE/PKSjEhSmP3hQDRCkuhm/K3eYrxfW543an50op7up0bgfx6dlXiouREfN47inFxZMRfOJppbiAzIUT24aKcYdFYSI4U4zL8KCJSqvF1VHfbuygA6Z8QymugXzg/NU64O+4k3gbg9vJ/eBC1sl9lnGtp1RWRtT7d0XOF7CZFF5Azhciv5GEmt9EPiYKPR+vef1AFGr9IOodmlDrHXp9Nji+6nEuj/gco4JeTw7K4czUINWT9Pp3X5SSk+pfer0eVbgxqV6n9xf1jI/UX9D7oU+avtgOh036N1fYl96/QSLtNwex4AO534QvXdofD/YT0zsazfpjSJX18+nl5faibP7Q/bxETDbCJ3DD4japEjE9az1BS+7Oz/bK52dge8/O+w4dzScl89S+0nmqmP/q60awa13MfyXz6sQmo9pWOY63SfN15hNhfSbm65TPKuYrSuk4L4iGU7+/EOKk531L/mDfkp/3LalD3w8l9X4o/7mxH/rJ6/1QcvgD+yzy/u0P7Quf22+S97ERGpW+j/0PMOndf4wKWa0AAAAASUVORK5CYII=) no-repeat 0 0;background-size:43px auto;}
+
+/*带loading图tip**/
+@-webkit-keyframes loading{0%{-webkit-transform: rotate(0deg);} 100%{-webkit-transform: rotate(-720deg);}}
+.tipBox .box_loading{ -webkit-animation:loading 2s linear infinite;-ms-animation:loading 2s linear infinite;-o-animation:loading 2s linear infinite; display:inline-block;width:24px;height:24px;border-radius:12px;
+    background:-webkit-gradient(linear, 0 0, 0 60%, from(#fff), to(#1d1d1d)); position:absolute;top:7px;left:18px;}
+.tipBox .box_loading .loading_mask{ display:inline-block;width:20px;height:20px;border-radius:10px;background:#1d1d1d;position:absolute;top:2px;left:2px;}
+.masktip{background:#000;opacity:0.4;width:100%;height:100%;position:fixed;z-index:99;left:0;top:0; display: none;}
+.masktip1{z-index:10000;}
+/**tip提示框样式相**/
+
+/**loading框样式相关**/
+@-webkit-keyframes loading { from { -webkit-transform:rotate(0deg);} to { -webkit-transform:rotate(-360deg);}}
+/**loading框样式相关**/
